@@ -7,11 +7,25 @@
 
 import UIKit
 
-class ProfileController: UIViewController {
+private let cellIdentifier = "ProfileCell"
+private let headerIdentifier = "ProfileHeader"
+
+class ProfileController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .systemOrange
+        configureCollectionView()
     }
+    
+    
+    //MARK: - Helpers
+    
+    func configureCollectionView() {
+        collectionView.backgroundColor = .white
+        collectionView.register(ProfileCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        collectionView.register(ProfileHeader.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: headerIdentifier)
+    }
+
 }
