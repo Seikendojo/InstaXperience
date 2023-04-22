@@ -68,6 +68,7 @@ class ProfileHeader: UICollectionReusableView {
     //MARK: - Actions
     
     @objc func handleEditProfileFollowTapped() {
+        
         print("DEBUG: Handle edit profile tapped....")
     }
 
