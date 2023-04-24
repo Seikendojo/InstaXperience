@@ -64,6 +64,27 @@ class ProfileHeader: UICollectionReusableView {
         return label
     }()
     
+    let gridButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "grid"), for: .normal)
+      return button
+    }()
+    
+    let listButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "list"), for: .normal)
+        button.tintColor = UIColor(white: 0, alpha: 0.2)
+        return button
+    }()
+    
+    let bookmarkButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "ribbon"), for: .normal)
+        button.tintColor = UIColor(white: 0, alpha: 0.2)
+        return button
+    }()
+    
+    
     
     
     
@@ -92,6 +113,23 @@ class ProfileHeader: UICollectionReusableView {
         stack.centerY(inView: profileImageView)
         stack.anchor(left: profileImageView.rightAnchor, right: rightAnchor,
                      paddingLeft: 12, paddingRight: 12, height: 50)
+        
+        let topDevider = UIView()
+        topDevider.backgroundColor = .lightGray
+        
+        let bottomDevider = UIView()
+        bottomDevider.backgroundColor = .lightGray
+        
+        let buttonStack = UIStackView(arrangedSubviews: [gridButton, listButton, bookmarkButton])
+        buttonStack.distribution = .fillEqually
+        
+        addSubview(buttonStack)
+        addSubview(topDevider)
+        addSubview(bottomDevider)
+        
+        buttonStack.anchor(left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, height: 50)
+        topDevider.anchor(top: buttonStack.topAnchor, left: leftAnchor, right: rightAnchor, height: 0.5)
+        bottomDevider.anchor(top: buttonStack.bottomAnchor, left: leftAnchor, right: rightAnchor, height: 0.5)
     }
     
     required init?(coder: NSCoder) {
@@ -111,8 +149,4 @@ class ProfileHeader: UICollectionReusableView {
         attributedText.append(NSAttributedString(string: label, attributes: [.font : UIFont.systemFont(ofSize: 14), .foregroundColor : UIColor.lightGray]))
         return attributedText
     }
-
-
-    
-
 }
