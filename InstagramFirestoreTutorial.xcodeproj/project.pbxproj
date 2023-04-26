@@ -32,6 +32,9 @@
 		D857D49C29E4C9950085AB35 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D857D49B29E4C9950085AB35 /* JGProgressHUD */; };
 		D857D49E29E4D9280085AB35 /* CustomAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857D49D29E4D9280085AB35 /* CustomAuthButton.swift */; };
 		D88FAC2A29F730A800DC5D38 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88FAC2929F730A800DC5D38 /* User.swift */; };
+		D88FAC2D29F873C300DC5D38 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D88FAC2C29F873C300DC5D38 /* SDWebImage */; };
+		D88FAC2F29F873C300DC5D38 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D88FAC2E29F873C300DC5D38 /* SDWebImageMapKit */; };
+		D88FAC3129F9A52300DC5D38 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */; };
 		D89A25FC29DB81A10018B008 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A25FB29DB81A10018B008 /* FeedCell.swift */; };
 		D8AF669129EF1B7A00A2FDCF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D8AF669029EF1B7A00A2FDCF /* FirebaseAnalytics */; };
 		D8AF669329EF1B7A00A2FDCF /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D8AF669229EF1B7A00A2FDCF /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -113,6 +116,7 @@
 		D857D49829E4C2600085AB35 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D857D49D29E4D9280085AB35 /* CustomAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthButton.swift; sourceTree = "<group>"; };
 		D88FAC2929F730A800DC5D38 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = InstagramFirestoreTutorial/API/User.swift; sourceTree = SOURCE_ROOT; };
+		D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		D89A25FB29DB81A10018B008 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D8AF66C629EF270F00A2FDCF /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		D8AF66C829EF271E00A2FDCF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				D8AF669B29EF1B7A00A2FDCF /* FirebaseAppDistribution-Beta in Frameworks */,
 				D8AF669F29EF1B7A00A2FDCF /* FirebaseAuthCombine-Community in Frameworks */,
 				D8AF66AB29EF1B7A00A2FDCF /* FirebaseFirestoreCombine-Community in Frameworks */,
+				D88FAC2D29F873C300DC5D38 /* SDWebImage in Frameworks */,
 				D8AF669529EF1B7A00A2FDCF /* FirebaseAnalyticsSwift in Frameworks */,
 				D8AF66B929EF1B7A00A2FDCF /* FirebaseMLModelDownloader in Frameworks */,
 				D8AF669729EF1B7A00A2FDCF /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
@@ -141,6 +146,7 @@
 				D8AF669329EF1B7A00A2FDCF /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				D8AF669929EF1B7A00A2FDCF /* FirebaseAppCheck in Frameworks */,
 				D8AF66BD29EF1B7A00A2FDCF /* FirebasePerformance in Frameworks */,
+				D88FAC2F29F873C300DC5D38 /* SDWebImageMapKit in Frameworks */,
 				D8AF66B329EF1B7A00A2FDCF /* FirebaseInAppMessaging-Beta in Frameworks */,
 				D8AF66B129EF1B7A00A2FDCF /* FirebaseFunctionsCombine-Community in Frameworks */,
 				D8AF66A129EF1B7A00A2FDCF /* FirebaseCrashlytics in Frameworks */,
@@ -269,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */,
+				D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -355,6 +362,8 @@
 				D8AF66C029EF1B7A00A2FDCF /* FirebaseRemoteConfigSwift */,
 				D8AF66C229EF1B7A00A2FDCF /* FirebaseStorage */,
 				D8AF66C429EF1B7A00A2FDCF /* FirebaseStorageCombine-Community */,
+				D88FAC2C29F873C300DC5D38 /* SDWebImage */,
+				D88FAC2E29F873C300DC5D38 /* SDWebImageMapKit */,
 			);
 			productName = InstagramFirestoreTutorial;
 			productReference = D83F475529DAA40A0069335D /* InstagramFirestoreTutorial.app */;
@@ -431,6 +440,7 @@
 			packageReferences = (
 				D857D49A29E4C9950085AB35 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 				D8AF668F29EF1B7A00A2FDCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D88FAC2B29F873C300DC5D38 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = D83F475629DAA40A0069335D /* Products */;
 			projectDirPath = "";
@@ -481,6 +491,7 @@
 				D857D49E29E4D9280085AB35 /* CustomAuthButton.swift in Sources */,
 				D8AF66C729EF270F00A2FDCF /* ImageUploader.swift in Sources */,
 				D8AF66C929EF271E00A2FDCF /* AuthService.swift in Sources */,
+				D88FAC3129F9A52300DC5D38 /* ProfileHeaderViewModel.swift in Sources */,
 				D83F475D29DAA40A0069335D /* ViewController.swift in Sources */,
 				D850CE8429F72ACF00DF40FE /* UserService.swift in Sources */,
 				D857D49529E2016E0085AB35 /* LoginController.swift in Sources */,
@@ -850,6 +861,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		D88FAC2B29F873C300DC5D38 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		D8AF668F29EF1B7A00A2FDCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -865,6 +884,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D857D49A29E4C9950085AB35 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
+		};
+		D88FAC2C29F873C300DC5D38 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D88FAC2B29F873C300DC5D38 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		D88FAC2E29F873C300DC5D38 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D88FAC2B29F873C300DC5D38 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 		D8AF669029EF1B7A00A2FDCF /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
