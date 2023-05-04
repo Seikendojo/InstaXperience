@@ -35,6 +35,7 @@
 		D88FAC2D29F873C300DC5D38 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D88FAC2C29F873C300DC5D38 /* SDWebImage */; };
 		D88FAC2F29F873C300DC5D38 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D88FAC2E29F873C300DC5D38 /* SDWebImageMapKit */; };
 		D88FAC3129F9A52300DC5D38 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */; };
+		D88FAC332A02F6BB00DC5D38 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88FAC322A02F6BB00DC5D38 /* UserCell.swift */; };
 		D89A25FC29DB81A10018B008 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A25FB29DB81A10018B008 /* FeedCell.swift */; };
 		D8AF669129EF1B7A00A2FDCF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D8AF669029EF1B7A00A2FDCF /* FirebaseAnalytics */; };
 		D8AF669329EF1B7A00A2FDCF /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D8AF669229EF1B7A00A2FDCF /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -117,6 +118,7 @@
 		D857D49D29E4D9280085AB35 /* CustomAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthButton.swift; sourceTree = "<group>"; };
 		D88FAC2929F730A800DC5D38 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = InstagramFirestoreTutorial/API/User.swift; sourceTree = SOURCE_ROOT; };
 		D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		D88FAC322A02F6BB00DC5D38 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		D89A25FB29DB81A10018B008 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D8AF66C629EF270F00A2FDCF /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		D8AF66C829EF271E00A2FDCF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				D89A25FB29DB81A10018B008 /* FeedCell.swift */,
 				D857D49829E4C2600085AB35 /* CustomTextField.swift */,
 				D857D49D29E4D9280085AB35 /* CustomAuthButton.swift */,
+				D88FAC322A02F6BB00DC5D38 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				D89A25FC29DB81A10018B008 /* FeedCell.swift in Sources */,
 				D8AF66D129F085AE00A2FDCF /* ProfileHeader.swift in Sources */,
 				D83F479729DB4BB90069335D /* ImageSelectorController.swift in Sources */,
+				D88FAC332A02F6BB00DC5D38 /* UserCell.swift in Sources */,
 				D83F479529DB4B9C0069335D /* SearchController.swift in Sources */,
 				D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */,
 				D83F479329DB4B890069335D /* FeedController.swift in Sources */,
