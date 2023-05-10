@@ -69,6 +69,7 @@
 		D8AF66CD29F07CE100A2FDCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8AF66CC29F07CE100A2FDCF /* GoogleService-Info.plist */; };
 		D8AF66CF29F0859900A2FDCF /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF66CE29F0859900A2FDCF /* ProfileCell.swift */; };
 		D8AF66D129F085AE00A2FDCF /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF66D029F085AE00A2FDCF /* ProfileHeader.swift */; };
+		D8F791EC2A0AE7EB0037C6B6 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F791EB2A0AE7EB0037C6B6 /* UserCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		D8AF66CC29F07CE100A2FDCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D8AF66CE29F0859900A2FDCF /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D8AF66D029F085AE00A2FDCF /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		D8F791EB2A0AE7EB0037C6B6 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 			children = (
 				D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */,
 				D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */,
+				D8F791EB2A0AE7EB0037C6B6 /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				D83F479729DB4BB90069335D /* ImageSelectorController.swift in Sources */,
 				D88FAC332A02F6BB00DC5D38 /* UserCell.swift in Sources */,
 				D83F479529DB4B9C0069335D /* SearchController.swift in Sources */,
+				D8F791EC2A0AE7EB0037C6B6 /* UserCellViewModel.swift in Sources */,
 				D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */,
 				D83F479329DB4B890069335D /* FeedController.swift in Sources */,
 				D83F479B29DB4BEF0069335D /* ProfileController.swift in Sources */,
