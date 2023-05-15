@@ -65,22 +65,14 @@ extension ProfileController {
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerIdentifier, for: indexPath) as! ProfileHeader
-           
+        
+        header.delegate = self
+        
         header.viewModel = ProfileHeaderViewModel(user: user)
        
         
         return header
     }
-}
-
-
-
-
-
-//MARK: - UICollectionViewDelegate
-
-extension ProfileController {
-    
 }
 
 
@@ -106,4 +98,21 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: view.frame.width, height: 240)
     }
     
+}
+
+//MARK: - ProfileHeaderDelegate
+
+extension ProfileController: ProfileHeaderDelegate {
+    func header(_ profileHeader: ProfileHeader, didTapActionButtonFor user: User) {
+        
+        if user.isCurrentUser {
+            print("DEBUG: Show edit profile here..")
+        } else if user.isFollowed {
+            print("DEBUG: Handle unfollow user here..")
+        } else {
+            UserService.follow(uid: user.uid) { error in
+                print("DEBUG: DID follow user. Update UI now...")
+            }
+        }
+    }
 }
