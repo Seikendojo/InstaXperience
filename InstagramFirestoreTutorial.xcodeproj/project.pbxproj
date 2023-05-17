@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D81950FA29E5FB90007E16A4 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */; };
+		D821BDDB2A1543F400190E8C /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = D821BDDA2A1543F400190E8C /* YPImagePicker */; };
 		D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475829DAA40A0069335D /* AppDelegate.swift */; };
 		D83F475B29DAA40A0069335D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475A29DAA40A0069335D /* SceneDelegate.swift */; };
 		D83F475D29DAA40A0069335D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475C29DAA40A0069335D /* ViewController.swift */; };
@@ -134,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D821BDDB2A1543F400190E8C /* YPImagePicker in Frameworks */,
 				D8AF66AF29EF1B7A00A2FDCF /* FirebaseFunctions in Frameworks */,
 				D8AF66A529EF1B7A00A2FDCF /* FirebaseDatabaseSwift in Frameworks */,
 				D8AF66B529EF1B7A00A2FDCF /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -370,6 +372,7 @@
 				D8AF66C429EF1B7A00A2FDCF /* FirebaseStorageCombine-Community */,
 				D88FAC2C29F873C300DC5D38 /* SDWebImage */,
 				D88FAC2E29F873C300DC5D38 /* SDWebImageMapKit */,
+				D821BDDA2A1543F400190E8C /* YPImagePicker */,
 			);
 			productName = InstagramFirestoreTutorial;
 			productReference = D83F475529DAA40A0069335D /* InstagramFirestoreTutorial.app */;
@@ -447,6 +450,7 @@
 				D857D49A29E4C9950085AB35 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 				D8AF668F29EF1B7A00A2FDCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D88FAC2B29F873C300DC5D38 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				D821BDD92A1543F400190E8C /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = D83F475629DAA40A0069335D /* Products */;
 			projectDirPath = "";
@@ -861,6 +865,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D821BDD92A1543F400190E8C /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		D857D49A29E4C9950085AB35 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
@@ -888,6 +900,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D821BDDA2A1543F400190E8C /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D821BDD92A1543F400190E8C /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
 		D857D49B29E4C9950085AB35 /* JGProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D857D49A29E4C9950085AB35 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
