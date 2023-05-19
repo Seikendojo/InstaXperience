@@ -11,6 +11,7 @@
 		D821BDDB2A1543F400190E8C /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = D821BDDA2A1543F400190E8C /* YPImagePicker */; };
 		D821BDDD2A16ACD200190E8C /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDDC2A16ACD200190E8C /* UploadPostController.swift */; };
 		D821BDDF2A16B53400190E8C /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDDE2A16B53400190E8C /* InputTextView.swift */; };
+		D821BDE12A17FDCB00190E8C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDE02A17FDCB00190E8C /* PostService.swift */; };
 		D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475829DAA40A0069335D /* AppDelegate.swift */; };
 		D83F475B29DAA40A0069335D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475A29DAA40A0069335D /* SceneDelegate.swift */; };
 		D83F475D29DAA40A0069335D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475C29DAA40A0069335D /* ViewController.swift */; };
@@ -96,6 +97,7 @@
 		D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		D821BDDC2A16ACD200190E8C /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		D821BDDE2A16B53400190E8C /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		D821BDE02A17FDCB00190E8C /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		D83F475529DAA40A0069335D /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83F475829DAA40A0069335D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83F475A29DAA40A0069335D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				D8AF66C629EF270F00A2FDCF /* ImageUploader.swift */,
 				D8AF66C829EF271E00A2FDCF /* AuthService.swift */,
 				D850CE8329F72ACF00DF40FE /* UserService.swift */,
+				D821BDE02A17FDCB00190E8C /* PostService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				D8F791EC2A0AE7EB0037C6B6 /* UserCellViewModel.swift in Sources */,
 				D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */,
 				D83F479329DB4B890069335D /* FeedController.swift in Sources */,
+				D821BDE12A17FDCB00190E8C /* PostService.swift in Sources */,
 				D83F479B29DB4BEF0069335D /* ProfileController.swift in Sources */,
 				D83F479129DB48420069335D /* MainTabController.swift in Sources */,
 				D83F479929DB4BD90069335D /* NotificationsController.swift in Sources */,
