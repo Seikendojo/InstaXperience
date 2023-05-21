@@ -13,13 +13,15 @@ class FeedController: UICollectionViewController {
     //MARK: - Properties
     private let reuseIdentifier = "Cell"
 
-    
+    private var posts = [Post]()
+
     
     //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        fetchPosts()
     }
     
     //MARK: - Actions
@@ -37,6 +39,16 @@ class FeedController: UICollectionViewController {
            print("DEBUG: Signout failed!")
        }
     }
+    
+    //MARK: - API
+    
+    func fetchPosts() {
+        PostService.fetchPost { posts in
+            self.posts = posts
+            self.collectionView.reloadData()
+        }
+    }
+
     
     //MARK: - Helpers
     
@@ -56,7 +68,7 @@ class FeedController: UICollectionViewController {
 
 extension FeedController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return posts.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
