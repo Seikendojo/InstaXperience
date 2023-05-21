@@ -13,6 +13,7 @@
 		D821BDDF2A16B53400190E8C /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDDE2A16B53400190E8C /* InputTextView.swift */; };
 		D821BDE12A17FDCB00190E8C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDE02A17FDCB00190E8C /* PostService.swift */; };
 		D821BDE32A1AB3BC00190E8C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDE22A1AB3BC00190E8C /* Post.swift */; };
+		D821BDE52A1ABC7500190E8C /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDE42A1ABC7500190E8C /* PostViewModel.swift */; };
 		D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475829DAA40A0069335D /* AppDelegate.swift */; };
 		D83F475B29DAA40A0069335D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475A29DAA40A0069335D /* SceneDelegate.swift */; };
 		D83F475D29DAA40A0069335D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475C29DAA40A0069335D /* ViewController.swift */; };
@@ -100,6 +101,7 @@
 		D821BDDE2A16B53400190E8C /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		D821BDE02A17FDCB00190E8C /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		D821BDE22A1AB3BC00190E8C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = InstagramFirestoreTutorial/API/Post.swift; sourceTree = SOURCE_ROOT; };
+		D821BDE42A1ABC7500190E8C /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		D83F475529DAA40A0069335D /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83F475829DAA40A0069335D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83F475A29DAA40A0069335D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */,
 				D88FAC3029F9A52300DC5D38 /* ProfileHeaderViewModel.swift */,
 				D8F791EB2A0AE7EB0037C6B6 /* UserCellViewModel.swift */,
+				D821BDE42A1ABC7500190E8C /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D821BDE52A1ABC7500190E8C /* PostViewModel.swift in Sources */,
 				D857D49929E4C2600085AB35 /* CustomTextField.swift in Sources */,
 				D850CE8229F72A6600DF40FE /* Constants.swift in Sources */,
 				D857D49E29E4D9280085AB35 /* CustomAuthButton.swift in Sources */,
