@@ -83,9 +83,8 @@ extension FeedController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! FeedCell
-        
-        let post = posts[indexPath.row]
-        cell.viewModel = PostViewModel(post: post)
+    
+        cell.viewModel = PostViewModel(post: posts[indexPath.row])
         return cell
     }
 }
