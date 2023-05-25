@@ -11,6 +11,10 @@ class ProfileCell: UICollectionViewCell {
     
     //MARK: - Properties
     
+    var viewModel: PostViewModel? {
+        didSet { configure() }
+    }
+    
     private var postImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "venom-7")
@@ -33,6 +37,9 @@ class ProfileCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-   
+    func configure() {
+        guard let viewModel = viewModel else { return }
+        postImageView.sd_setImage(with: viewModel.imageUrl)
+    }
     
 }
