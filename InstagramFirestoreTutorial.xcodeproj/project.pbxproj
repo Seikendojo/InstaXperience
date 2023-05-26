@@ -77,6 +77,7 @@
 		D8AF66D129F085AE00A2FDCF /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF66D029F085AE00A2FDCF /* ProfileHeader.swift */; };
 		D8E804CA2A1FE3F400869C07 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E804C92A1FE3F300869C07 /* CommentController.swift */; };
 		D8E804CC2A1FE63A00869C07 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E804CB2A1FE63900869C07 /* CommentCell.swift */; };
+		D8E804CE2A2151F800869C07 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E804CD2A2151F800869C07 /* CommentInputAccessoryView.swift */; };
 		D8F791EC2A0AE7EB0037C6B6 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F791EB2A0AE7EB0037C6B6 /* UserCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +142,7 @@
 		D8AF66D029F085AE00A2FDCF /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		D8E804C92A1FE3F300869C07 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
 		D8E804CB2A1FE63900869C07 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		D8E804CD2A2151F800869C07 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		D8F791EB2A0AE7EB0037C6B6 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -315,6 +317,7 @@
 				D857D49D29E4D9280085AB35 /* CustomAuthButton.swift */,
 				D88FAC322A02F6BB00DC5D38 /* UserCell.swift */,
 				D8E804CB2A1FE63900869C07 /* CommentCell.swift */,
+				D8E804CD2A2151F800869C07 /* CommentInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E804CE2A2151F800869C07 /* CommentInputAccessoryView.swift in Sources */,
 				D821BDE52A1ABC7500190E8C /* PostViewModel.swift in Sources */,
 				D857D49929E4C2600085AB35 /* CustomTextField.swift in Sources */,
 				D850CE8229F72A6600DF40FE /* Constants.swift in Sources */,
