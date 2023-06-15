@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8099EFB2A22CC9200F9EC48 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8099EFA2A22CC9200F9EC48 /* CommentService.swift */; };
 		D81950FA29E5FB90007E16A4 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */; };
 		D821BDDB2A1543F400190E8C /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = D821BDDA2A1543F400190E8C /* YPImagePicker */; };
 		D821BDDD2A16ACD200190E8C /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDDC2A16ACD200190E8C /* UploadPostController.swift */; };
@@ -99,6 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8099EFA2A22CC9200F9EC48 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		D81950F929E5FB90007E16A4 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		D821BDDC2A16ACD200190E8C /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		D821BDDE2A16B53400190E8C /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				D8AF66C829EF271E00A2FDCF /* AuthService.swift */,
 				D850CE8329F72ACF00DF40FE /* UserService.swift */,
 				D821BDE02A17FDCB00190E8C /* PostService.swift */,
+				D8099EFA2A22CC9200F9EC48 /* CommentService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				D8E804CA2A1FE3F400869C07 /* CommentController.swift in Sources */,
 				D850CE8429F72ACF00DF40FE /* UserService.swift in Sources */,
 				D821BDE32A1AB3BC00190E8C /* Post.swift in Sources */,
+				D8099EFB2A22CC9200F9EC48 /* CommentService.swift in Sources */,
 				D857D49529E2016E0085AB35 /* LoginController.swift in Sources */,
 				D81950FA29E5FB90007E16A4 /* AuthenticationViewModel.swift in Sources */,
 				D8E804CC2A1FE63A00869C07 /* CommentCell.swift in Sources */,
