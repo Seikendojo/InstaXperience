@@ -58,6 +58,7 @@ class LoginController: UIViewController {
         return button
     }()
      
+    
     //MARK: - LifeCycle
     
     
@@ -115,7 +116,8 @@ class LoginController: UIViewController {
         iconImage.setDimensions(height: 80, width: 120)
         iconImage.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
         
-        let stack = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton, forgotPasswordButton])
+        let stack = UIStackView(arrangedSubviews: [emailTextField, passwordTextField,
+                                                   loginButton, forgotPasswordButton])
         stack.axis = .vertical
         stack.spacing = 20
         
