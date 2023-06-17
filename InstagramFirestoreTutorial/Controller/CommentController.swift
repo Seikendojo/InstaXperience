@@ -14,6 +14,7 @@ class CommentController: UICollectionViewController {
     //MARK: - Properties
     
     private let post: Post
+    private var comments = [Comment]()
     
     private lazy var commentInputView: CommentInputAccessoryView = {
         let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
@@ -37,6 +38,7 @@ class CommentController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        fetchComments()
     }
     
     override var inputAccessoryView: UIView? {
@@ -57,6 +59,16 @@ class CommentController: UICollectionViewController {
         tabBarController?.tabBar.isHidden = false 
     }
     
+    //MARK: - API
+    
+    func fetchComments() {
+        CommentService.fetchComments(forPost: post.postId) { comments in
+            self.comments = comments
+            self.collectionView.reloadData()
+        }
+    }
+
+    
     //MARK: - Helpers
     
     func configureCollectionView() {
@@ -76,7 +88,7 @@ class CommentController: UICollectionViewController {
 
 extension CommentController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return comments.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
