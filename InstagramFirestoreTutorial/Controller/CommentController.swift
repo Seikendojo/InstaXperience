@@ -97,8 +97,10 @@ extension CommentController: UICollectionViewDelegateFlowLayout {
 //MARK: - CommentInputAccessoryViewDelegate
 
 extension CommentController: CommentInputAccessoryViewDelegate {
-    func inputView(_ inputView: CommentInputAccessoryView, watsToUploadComment comment: String) {
-        guard let tab = tabBarController as? MainTabController else { return }
+
+    func inputView(_ inputView: CommentInputAccessoryView, wantsToUploadComment comment: String) {
+        
+        guard let tab = self.tabBarController as? MainTabController else { return }
         guard let user = tab.user else { return }
         
         showLoader(true)
