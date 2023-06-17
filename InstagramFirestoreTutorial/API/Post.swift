@@ -26,7 +26,7 @@ struct Post {
         self.imageUrl = dictionary["imageUrl"] as? String ?? ""
         self.ownerUid = dictionary["ownerUid"] as? String ?? ""
         self.timeStamp = dictionary["timeStamp"] as? Timestamp ?? Timestamp(date: Date())
-        self.postID = dictionary["postID"] as? String ?? ""
+//        self.postID = dictionary["postID"] as? String ?? ""
         self.ownerImageUrl = dictionary["ownerImageUrl"] as? String ?? ""
         self.ownerUsername =  dictionary["ownerUsername"] as? String ?? ""
     }
