@@ -119,9 +119,12 @@ extension CommentController: CommentInputAccessoryViewDelegate {
         
         showLoader(true)
         
+        print(post)
+        
         CommentService.uploadComment(comment: comment, postID: post.postId, user: user) { error in
             self.showLoader(false)
             inputView.clearCommentTextView()
         }
+
     }
 }
