@@ -14,6 +14,7 @@ class CommentController: UICollectionViewController {
     //MARK: - Properties
     
     private let post: Post
+    private var comments = [Comment]()
     
     private lazy var commentInputView: CommentInputAccessoryView = {
         let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
@@ -37,6 +38,7 @@ class CommentController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        fetchComments()
     }
     
     override var inputAccessoryView: UIView? {
@@ -57,6 +59,16 @@ class CommentController: UICollectionViewController {
         tabBarController?.tabBar.isHidden = false 
     }
     
+    //MARK: - API
+    
+    func fetchComments() {
+        CommentService.fetchComments(forPost: post.postId) { comments in
+            self.comments = comments
+            self.collectionView.reloadData()
+        }
+    }
+
+    
     //MARK: - Helpers
     
     func configureCollectionView() {
@@ -76,11 +88,12 @@ class CommentController: UICollectionViewController {
 
 extension CommentController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return comments.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CommentCell
+        cell.viewModel = CommentViewModel(comment: comments[indexPath.row])
         return cell
     }
 }
@@ -90,7 +103,9 @@ extension CommentController {
 extension CommentController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 80)
+        let viewModel = CommentViewModel(comment: comments[indexPath.row])
+        let height = viewModel.size(forWidth: view.frame.width).height + 32
+        return CGSize(width: view.frame.width, height: height)
     }
 }
 
@@ -99,7 +114,7 @@ extension CommentController: UICollectionViewDelegateFlowLayout {
 extension CommentController: CommentInputAccessoryViewDelegate {
     func inputView(_ inputView: CommentInputAccessoryView, wantsToUploadComment comment: String) {
         
-        guard let tab = self.tabBarController as? MainTabController else { return }
+        guard let tab = tabBarController as? MainTabController else { return }
         guard let user = tab.user else { return }
         
         showLoader(true)

@@ -17,19 +17,28 @@ struct CommentService {
                                    "username": user.username,
                                    "profileImageUrl": user.profileImageUrl]
         
-        // func currentPostDoc() -> DocumentReference? {
-        //    if Auth.auth().currentUser != nil {
-        //        return COLLECTION_POSTS.document(postID).collection("comments").addDocument(data: data, completion: completion)
-        //    }
-        //    return nil
-       // }
-    
+ 
         COLLECTION_POSTS.document(postID).collection("comments").addDocument(data: data, completion: completion)
-        
     }
     
-    static func fetchComments() {
+    static func fetchComments(forPost postID: String, completion: @escaping ([Comment]) -> Void) {
         
+        var comments = [Comment]()
+        
+        let query = COLLECTION_POSTS.document(postID).collection("comments")
+            .order(by: "timestamp", descending: true)
+        
+        query.addSnapshotListener { snapshot, error in
+            snapshot?.documentChanges.forEach({ change in
+                if change.type == .added {
+                    let data = change.document.data()
+                    let comment = Comment(dictionary: data)
+                    comments.append(comment)
+                }
+            })
+            
+             completion(comments)
+        }
         
     }
 }
