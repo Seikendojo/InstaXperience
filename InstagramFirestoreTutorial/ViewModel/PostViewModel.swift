@@ -5,7 +5,8 @@
 //  Created by Seiken Dojo on 2023-05-21.
 //
 
-import Foundation
+import UIKit
+
 
 
 struct PostViewModel {
@@ -21,6 +22,15 @@ struct PostViewModel {
     var username: String { return post.ownerUsername}
     
     var likes: Int { return post.likes }
+    
+    var likeButtonTinColor: UIColor {
+        return post.didLike ? .red : .black
+    }
+    
+    var likeButtonImage: UIImage? {
+        let imageName = post.didLike ? "like_selected" : "like_unselected"
+        return UIImage(named: imageName) 
+    }
     
     var laikeLabelText: String {
         if post.likes != 1 {

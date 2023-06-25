@@ -13,7 +13,10 @@ class FeedController: UICollectionViewController {
     //MARK: - Properties
     private let reuseIdentifier = "Cell"
 
-    private var posts = [Post]()
+    private var posts = [Post]() {
+        didSet { collectionView.reloadData() }
+    }
+    
     var post: Post?
 
     
@@ -53,8 +56,18 @@ class FeedController: UICollectionViewController {
         
         PostService.fetchPost { posts in
             self.posts = posts
+            self.checkIfUserLikedPosts()
             self.collectionView.refreshControl?.endRefreshing()
-            self.collectionView.reloadData()
+        }
+    }
+    
+    func checkIfUserLikedPosts() {
+        self.posts.forEach { post in
+            PostService.checkIfUserLikedPost(post: post) { didLike in
+                if let index = self.posts.firstIndex(where: { $0.postId == post.postId }) {
+                    self.posts[index].didLike = didLike
+                }
+            }
         }
     }
 
@@ -122,18 +135,16 @@ extension FeedController: FeedCellDelegate {
         cell.viewModel?.post.didLike.toggle()
         
         if post.didLike {
-            print("DEBUG: Unlike post here...")
             PostService.unlikePost(post: post) { _ in
-                print("DEBUG: Unlike post did complete...")
                 cell.likeButton.setImage(UIImage(named: "like_unselected"), for: .normal)
                 cell.likeButton.tintColor = .black
+                cell.viewModel?.post.likes = post.likes - 1
             }
         } else {
-            print("DEBUG: Like post here...")
             PostService.likePost(post: post) { _ in
                 cell.likeButton.setImage(UIImage(named: "like_selected"), for: .normal)
-                print("DEBUG: Like post did complete...")
                 cell.likeButton.tintColor = .red
+                cell.viewModel?.post.likes = post.likes + 1  
             }
         }
     }
