@@ -39,7 +39,6 @@ struct CommentService {
             
              completion(comments)
         }
-        
     }
 }
 
