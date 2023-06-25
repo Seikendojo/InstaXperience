@@ -118,6 +118,16 @@ extension FeedController: UICollectionViewDelegateFlowLayout {
 
 extension FeedController: FeedCellDelegate {
     
+    func cell(_ cell: FeedCell, didLike post: Post) {
+        cell.viewModel?.post.didLike.toggle()
+        
+        if post.didLike {
+            print("DEBUG: Unlike post here..")
+        } else {
+            print("DEBUG: Like post here..")
+        }
+    }
+    
     func cell(_ cell: FeedCell, wantsToShowCommentsFor post: Post) {
         let controller = CommentController(post: post)
         navigationController?.pushViewController(controller, animated: true)
