@@ -14,6 +14,7 @@
 		D821BDDF2A16B53400190E8C /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDDE2A16B53400190E8C /* InputTextView.swift */; };
 		D821BDE12A17FDCB00190E8C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDE02A17FDCB00190E8C /* PostService.swift */; };
 		D821BDE52A1ABC7500190E8C /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821BDE42A1ABC7500190E8C /* PostViewModel.swift */; };
+		D833F9672A4A186B00EAFF89 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833F9662A4A186B00EAFF89 /* NotificationCell.swift */; };
 		D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475829DAA40A0069335D /* AppDelegate.swift */; };
 		D83F475B29DAA40A0069335D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475A29DAA40A0069335D /* SceneDelegate.swift */; };
 		D83F475D29DAA40A0069335D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F475C29DAA40A0069335D /* ViewController.swift */; };
@@ -27,7 +28,7 @@
 		D83F479329DB4B890069335D /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F479229DB4B890069335D /* FeedController.swift */; };
 		D83F479529DB4B9C0069335D /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F479429DB4B9C0069335D /* SearchController.swift */; };
 		D83F479729DB4BB90069335D /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F479629DB4BB90069335D /* ImageSelectorController.swift */; };
-		D83F479929DB4BD90069335D /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F479829DB4BD90069335D /* NotificationsController.swift */; };
+		D83F479929DB4BD90069335D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F479829DB4BD90069335D /* NotificationController.swift */; };
 		D83F479B29DB4BEF0069335D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F479A29DB4BEF0069335D /* ProfileController.swift */; };
 		D850CE8229F72A6600DF40FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850CE8129F72A6600DF40FE /* Constants.swift */; };
 		D850CE8429F72ACF00DF40FE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850CE8329F72ACF00DF40FE /* UserService.swift */; };
@@ -108,6 +109,7 @@
 		D821BDDE2A16B53400190E8C /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		D821BDE02A17FDCB00190E8C /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		D821BDE42A1ABC7500190E8C /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		D833F9662A4A186B00EAFF89 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		D83F475529DAA40A0069335D /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83F475829DAA40A0069335D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83F475A29DAA40A0069335D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +127,7 @@
 		D83F479229DB4B890069335D /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		D83F479429DB4B9C0069335D /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		D83F479629DB4BB90069335D /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
-		D83F479829DB4BD90069335D /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		D83F479829DB4BD90069335D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D83F479A29DB4BEF0069335D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		D850CE8129F72A6600DF40FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D850CE8329F72ACF00DF40FE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -296,7 +298,7 @@
 				D83F479229DB4B890069335D /* FeedController.swift */,
 				D83F479429DB4B9C0069335D /* SearchController.swift */,
 				D83F479629DB4BB90069335D /* ImageSelectorController.swift */,
-				D83F479829DB4BD90069335D /* NotificationsController.swift */,
+				D83F479829DB4BD90069335D /* NotificationController.swift */,
 				D83F479A29DB4BEF0069335D /* ProfileController.swift */,
 				D821BDDC2A16ACD200190E8C /* UploadPostController.swift */,
 				D8E804C92A1FE3F300869C07 /* CommentController.swift */,
@@ -326,6 +328,7 @@
 				D88FAC322A02F6BB00DC5D38 /* UserCell.swift */,
 				D8E804CB2A1FE63900869C07 /* CommentCell.swift */,
 				D8E804CD2A2151F800869C07 /* CommentInputAccessoryView.swift */,
+				D833F9662A4A186B00EAFF89 /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,11 +558,12 @@
 				D8F791EC2A0AE7EB0037C6B6 /* UserCellViewModel.swift in Sources */,
 				D88C1E242A3E748400BED79F /* CommentViewModel.swift in Sources */,
 				D83F475929DAA40A0069335D /* AppDelegate.swift in Sources */,
+				D833F9672A4A186B00EAFF89 /* NotificationCell.swift in Sources */,
 				D83F479329DB4B890069335D /* FeedController.swift in Sources */,
 				D821BDE12A17FDCB00190E8C /* PostService.swift in Sources */,
 				D83F479B29DB4BEF0069335D /* ProfileController.swift in Sources */,
 				D83F479129DB48420069335D /* MainTabController.swift in Sources */,
-				D83F479929DB4BD90069335D /* NotificationsController.swift in Sources */,
+				D83F479929DB4BD90069335D /* NotificationController.swift in Sources */,
 				D8AF66CF29F0859900A2FDCF /* ProfileCell.swift in Sources */,
 				D857D49229E1EC8B0085AB35 /* Extensions.swift in Sources */,
 				D899F29D2A3D0EC4006F09C5 /* User.swift in Sources */,
