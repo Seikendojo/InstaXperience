@@ -7,19 +7,34 @@
 
 import UIKit
 
+
+private let reuseIdentifier = "NotificationCell"
+
 class NotificationController: UITableViewController {
     
     //MARK: - Properties
     
-    private let reuseIdentifier = "NotificationCell"
+    private var notificaitons = [Notification]() {
+        didSet { tableView.reloadData() }
+    }
     
-    //MARK: -Lifecycle
+    //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        
+        fetchNotifications()
     }
+    
+    //MARK: - API
+    
+    func fetchNotifications() {
+        NotificationService.fetchNotification { notifications in
+            self.notificaitons = notifications
+            print("DEBUG: notificatioins are \(notifications)")
+        }
+    }
+
     
     //MARK: - Helpers
     
@@ -36,7 +51,7 @@ class NotificationController: UITableViewController {
 
 extension NotificationController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return notificaitons.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
