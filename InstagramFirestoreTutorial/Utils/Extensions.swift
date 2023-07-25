@@ -14,10 +14,15 @@ extension UIViewController {
 
     func configureGradientLayer() {
         let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
-        gradient.locations = [0, 1]
+        gradient.colors = [UIColor.black.cgColor, UIColor.systemCyan.cgColor]
+        gradient.locations = [0,1]
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
+//        let gradient = CAGradientLayer()
+//        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
+//        gradient.locations = [0, 1]
+//        view.layer.addSublayer(gradient)
+//        gradient.frame = view.frame
     }
 
     func showLoader(_ show: Bool) {
