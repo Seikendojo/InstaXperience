@@ -219,7 +219,7 @@
 		D83F474C29DAA40A0069335D = {
 			isa = PBXGroup;
 			children = (
-				D83F475729DAA40A0069335D /* InstagramFirestoreTutorial */,
+				D83F475729DAA40A0069335D /* InstaXperience */,
 				D83F476E29DAA40C0069335D /* InstagramFirestoreTutorialTests */,
 				D83F477829DAA40C0069335D /* InstagramFirestoreTutorialUITests */,
 				D83F475629DAA40A0069335D /* Products */,
@@ -236,7 +236,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D83F475729DAA40A0069335D /* InstagramFirestoreTutorial */ = {
+		D83F475729DAA40A0069335D /* InstaXperience */ = {
 			isa = PBXGroup;
 			children = (
 				D899F29B2A3D0EAD006F09C5 /* Model */,
@@ -254,7 +254,7 @@
 				D83F476629DAA40B0069335D /* Info.plist */,
 				D8AF66CC29F07CE100A2FDCF /* GoogleService-Info.plist */,
 			);
-			path = InstagramFirestoreTutorial;
+			path = InstaXperience;
 			sourceTree = "<group>";
 		};
 		D83F476E29DAA40C0069335D /* InstagramFirestoreTutorialTests */ = {
@@ -482,7 +482,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D83F475029DAA40A0069335D /* Build configuration list for PBXProject "InstagramFirestoreTutorial" */;
+			buildConfigurationList = D83F475029DAA40A0069335D /* Build configuration list for PBXProject "InstaXperience" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -761,7 +761,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DXCQ9WGD8Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramFirestoreTutorial/Info.plist;
+				INFOPLIST_FILE = InstaXperience/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -772,7 +772,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seikendojo1.InstagramFirestoreTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seikendojo1.InstaXperience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -789,7 +789,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DXCQ9WGD8Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramFirestoreTutorial/Info.plist;
+				INFOPLIST_FILE = InstaXperience/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -800,7 +800,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seikendojo1.InstagramFirestoreTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seikendojo1.InstaXperience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -887,7 +887,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D83F475029DAA40A0069335D /* Build configuration list for PBXProject "InstagramFirestoreTutorial" */ = {
+		D83F475029DAA40A0069335D /* Build configuration list for PBXProject "InstaXperience" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D83F477D29DAA40C0069335D /* Debug */,
